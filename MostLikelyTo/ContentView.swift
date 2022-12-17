@@ -86,7 +86,6 @@ struct ContentView: View {
 
             Button(action:{
                 currentPrompt = ContentView.promptList[Int.random(in: 0...(ContentView.promptList.count-1))]
-                
                 currentColor = colorList[Int.random(in: 0...(colorList.count-1))]
             }, label: {
                 Text(currentPrompt)
@@ -99,7 +98,6 @@ struct ContentView: View {
                     .frame(width: 250)
                     .frame(height: 250)
             })
-
                 .background(Color.white)
                 .cornerRadius(10)
         }
